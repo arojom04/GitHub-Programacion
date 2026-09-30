@@ -24,7 +24,7 @@ public class Ejercicio9 {
         int medio2 = numero3;
         int mayor = numero4;
 
-int temporal;
+        int temporal;
 
         if (menor > medio1) {
             temporal = menor;
