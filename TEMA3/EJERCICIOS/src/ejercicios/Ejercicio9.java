@@ -18,135 +18,43 @@ public class Ejercicio9 {
         int numero3 = entrada.nextInt();
         System.out.println("Por último, introduzca un cuarto numero: ");
         int numero4 = entrada.nextInt();        
-    
-        int menor = 0, medio1 = 0, medio2 = 0, mayor = 0;
 
-        if (numero1 >= numero2 && numero1 >= numero3 && numero1 >= numero4) {
-            mayor = numero1;
-            if (numero2 >= numero3 && numero2 >= numero4) {
-                medio2 = numero2;
-                if (numero3 >= numero4) {
-                    medio1 = numero3;
-                    menor = numero4;
-                } else {
-                    medio1 = numero4;
-                    menor = numero3;
-                }
-            } else if (numero3 >= numero2 && numero3 >= numero4) {
-                medio2 = numero3;
-                if (numero2 >= numero4) {
-                    medio1 = numero2;
-                    menor = numero4;
-                } else {
-                    medio1 = numero4;
-                    menor = numero2;
-                }
-            } else {
-                medio2 = numero4;
-                if (numero2 >= numero3) {
-                    medio1 = numero2;
-                    menor = numero3;
-                } else {
-                    medio1 = numero3;
-                    menor = numero2;
-                }
-            }
-        }
+        int menor = numero1;
+        int medio1 = numero2;
+        int medio2 = numero3;
+        int mayor = numero4;
 
-        if (numero2 >= numero1 && numero2 >= numero3 && numero2 >= numero4) {
-            mayor = numero2;
-            if (numero1 >= numero3 && numero1 >= numero4) {
-                medio2 = numero1;
-                if (numero3 >= numero4) {
-                    medio1 = numero3;
-                    menor = numero4;
-                } else {
-                    medio1 = numero4;
-                    menor = numero3;
-                }
-            } else if (numero3 >= numero1 && numero3 >= numero4) {
-                medio2 = numero3;
-                if (numero1 >= numero4) {
-                    medio1 = numero1;
-                    menor = numero4;
-                } else {
-                    medio1 = numero4;
-                    menor = numero1;
-                }
-            } else {
-                medio2 = numero4;
-                if (numero1 >= numero3) {
-                    medio1 = numero1;
-                    menor = numero3;
-                } else {
-                    medio1 = numero3;
-                    menor = numero1;
-                }
-            }
-        }
+int temporal;
 
-        if (numero3 >= numero2 && numero3 >= numero1 && numero3 >= numero4) {
-            mayor = numero3;
-            if (numero2 >= numero1 && numero2 >= numero4) {
-                medio2 = numero2;
-                if (numero1 >= numero4) {
-                    medio1 = numero1;
-                    menor = numero4;
-                } else {
-                    medio1 = numero4;
-                    menor = numero1;
-                }
-            } else if (numero1 >= numero2 && numero1 >= numero4) {
-                medio2 = numero1;
-                if (numero2 >= numero4) {
-                    medio1 = numero2;
-                    menor = numero4;
-                } else {
-                    medio1 = numero4;
-                    menor = numero2;
-                }
-            } else {
-                medio2 = numero4;
-                if (numero2 >= numero1) {
-                    medio1 = numero2;
-                    menor = numero1;
-                } else {
-                    medio1 = numero1;
-                    menor = numero2;
-                }
-            }
+        if (menor > medio1) {
+            temporal = menor;
+            menor = medio1;
+            medio1 = temporal;
         }
-        
-        if (numero4 >= numero2 && numero4 >= numero3 && numero4 >= numero1) {
-            mayor = numero4;
-            if (numero2 >= numero3 && numero2 >= numero1) {
-                medio2 = numero2;
-                if (numero3 >= numero1) {
-                    medio1 = numero3;
-                    menor = numero1;
-                } else {
-                    medio1 = numero1;
-                    menor = numero3;
-                }
-            } else if (numero3 >= numero2 && numero3 >= numero1) {
-                medio2 = numero3;
-                if (numero2 >= numero1) {
-                    medio1 = numero2;
-                    menor = numero1;
-                } else {
-                    medio1 = numero1;
-                    menor = numero2;
-                }
-            } else {
-                medio2 = numero1;
-                if (numero2 >= numero3) {
-                    medio1 = numero2;
-                    menor = numero3;
-                } else {
-                    medio1 = numero3;
-                    menor = numero2;
-                }
-            }
+        if (medio1 > medio2) {
+            temporal = medio1;
+            medio1 = medio2;
+            medio2 = temporal;
+        }
+        if (medio2 > mayor) {
+            temporal = medio2;
+            medio2 = mayor;
+            mayor = temporal;
+        }
+        if (menor > medio1) {
+            temporal = menor;
+            menor = medio1;
+            medio1 = temporal;
+        }
+        if (medio1 > medio2) {
+            temporal = medio1;
+            medio1 = medio2;
+            medio2 = temporal;
+        }
+        if (menor > medio1) {
+            temporal = menor;
+            menor = medio1;
+            medio1 = temporal;
         }
         System.out.println("El orden de los números introducidos es el " + menor + " - " + medio1 + " - " + medio2 + " - " + mayor);
     }
