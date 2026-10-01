@@ -27,34 +27,22 @@ public class Ejercicio9 {
         int temporal;
 
         if (menor > medio1) {
-            temporal = menor;
-            menor = medio1;
-            medio1 = temporal;
+            temporal = menor; menor = medio1; medio1 = temporal;
         }
         if (medio1 > medio2) {
-            temporal = medio1;
-            medio1 = medio2;
-            medio2 = temporal;
+            temporal = medio1; medio1 = medio2; medio2 = temporal;
         }
         if (medio2 > mayor) {
-            temporal = medio2;
-            medio2 = mayor;
-            mayor = temporal;
+            temporal = medio2; medio2 = mayor; mayor = temporal;
         }
         if (menor > medio1) {
-            temporal = menor;
-            menor = medio1;
-            medio1 = temporal;
+            temporal = menor; menor = medio1; medio1 = temporal;
         }
         if (medio1 > medio2) {
-            temporal = medio1;
-            medio1 = medio2;
-            medio2 = temporal;
+            temporal = medio1; medio1 = medio2; medio2 = temporal;
         }
         if (menor > medio1) {
-            temporal = menor;
-            menor = medio1;
-            medio1 = temporal;
+            temporal = menor; menor = medio1; medio1 = temporal;
         }
         System.out.println("El orden de los números introducidos es el " + menor + " - " + medio1 + " - " + medio2 + " - " + mayor);
     }
