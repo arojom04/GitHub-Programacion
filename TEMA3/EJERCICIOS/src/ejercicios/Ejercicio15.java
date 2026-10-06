@@ -1,5 +1,5 @@
 package ejercicios;
-import java.util.Scanner;
+import java.util.Scanner; //Importamos el scanner
 /**
  *
  * @author Alejandro Rojo Martín
@@ -12,15 +12,15 @@ public class Ejercicio15 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Scanner entrada = new Scanner (System.in);
-        int multiplicador = 0;
+        Scanner entrada = new Scanner (System.in); //Declaramos el scanner
+        int multiplicador = 0; //Declaramos la variable
         System.out.print("Introduzca un numero para calcular su tabla de multiplicar: ");
         int numero = entrada.nextInt();
         
         do{
-            System.out.println(numero+ " X " +multiplicador+ " = " +numero*multiplicador);
-            multiplicador++;
-        }while(multiplicador<11);
+            System.out.println(numero+ " X " +multiplicador+ " = " +numero*multiplicador); //Ponemos esto para que imprima eso.
+            multiplicador++; //Esto le va sumando 1 a la variable multiplicador.
+        }while(multiplicador<11);//Con esto nos aseguramos de que la tabla de multiplicar solo llegue a multiplicar hasta 10
         
     }
     
