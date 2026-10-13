@@ -13,14 +13,16 @@ public class Ejercicio25 {
      */
     public static void main(String[] args) {
     int numero1=17;  
-            
+    int suma=0;
+    
         do{
             if(numero1%2==0){
-                System.out.print(" - ");
-                System.out.print(numero1);
+                suma+=numero1;
             }
             numero1++;
         }while(numero1<139);
+        
+        System.out.println("La suma total de todos los números pares existentes entre 17 y 139 es " +suma );
         }    
     
 }
