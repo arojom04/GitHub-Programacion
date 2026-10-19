@@ -10,6 +10,10 @@ import java.util.Scanner;
 public class Ejercicio08 {
     
     
+    /**
+     * DENTRO DEL MÉTODO CALCULAMOS LOS BILLETES Y LAS MONEDAS.
+     * @param cantidad 
+     */
     public static void dinero (int cantidad){
         
         System.out.println(cantidad + " Euros se descomponen en");
@@ -45,6 +49,7 @@ public class Ejercicio08 {
     }
 
     /**
+     * PASAMOS EL RESULTADO DEL MÉTODO DINERO AL MÉTODO MAIN.
      * @param args the command line arguments
      */
     public static void main(String[] args) {

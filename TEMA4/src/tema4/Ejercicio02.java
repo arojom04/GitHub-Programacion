@@ -20,6 +20,7 @@ public class Ejercicio02 {
         System.out.println("Ahora, introduzca un segundo numero: ");
         int num2 = entrada.nextInt();
         
+        //CON EL METODO DENTRO DEL IF DECLARO LO QUE SE TIENE QUE HACER DEPENDIENDO SI EL NÚMERO ES MAYOR O MENOR QUE 10.
         if(num1>10){
             int resultado = Ejercicio02Operaciones.multiplicar(num1,num2);
             System.out.println("La operación que se realizó es producto y el resultado es " + resultado);

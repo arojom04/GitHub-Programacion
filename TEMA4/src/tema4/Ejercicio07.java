@@ -8,6 +8,13 @@ import java.util.Scanner;
  */
 public class Ejercicio07 {
 
+    /**
+     * DENTRO DEL MÉTODO USAMOS EL MÉTODO DE LA BURBUJA PARA DECLARAR CUAL ES EL ORDEN DE LOS NÚMEROS.
+     * @param num1
+     * @param num2
+     * @param num3
+     * @param num4 
+     */
     public static void ordenar (int num1, int num2, int num3, int num4){
         
         int menor = num1;
@@ -39,6 +46,7 @@ public class Ejercicio07 {
     }
     
     /**
+     * TRAEMOS EL RESULTADO DEL OTRO MÉTODO A DENTRO DEL MÉTODO MAIN
      * @param args the command line arguments
      */
     public static void main(String[] args) {

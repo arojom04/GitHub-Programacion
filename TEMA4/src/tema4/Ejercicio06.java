@@ -8,6 +8,10 @@ import java.util.Scanner;
  */
 public class Ejercicio06 {
 
+    /**
+     * CON EL MÉTODO DECLARADO, USO EL IF PARA VER LA NOTA QUE ES.
+     * @param nota 
+     */
     public static void calificacion(int nota){
         if(nota<=4 && nota>=0){
             System.out.println("La calificación del alumno es suspenso.");
@@ -23,6 +27,7 @@ public class Ejercicio06 {
     }
     
     /**
+     * PONEMOS DENTRO EL RESULTADO DEL MÉTODO CALIFICACION PARA QUE NOS ENSEÑE EL RESULTADO DEL NÚMERO INTRODUCIDO.
      * @param args the command line arguments
      */
     public static void main(String[] args) {

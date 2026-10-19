@@ -9,6 +9,7 @@ import java.util.Scanner;
 public class Ejercicio05 {
 
     /**
+     * TRAIGO EL MÉTODO DEL OTRO PAQUETE Y MANDA EL RESULTADO DE SI EL NÚMERO INTRODUCIDO ES PAR O IMPAR
      * @param args the command line arguments
      */
     public static void main(String[] args) {

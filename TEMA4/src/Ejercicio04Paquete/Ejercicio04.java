@@ -7,7 +7,13 @@ package Ejercicio04Paquete;
  * @since 19/10/2026
  */
 public class Ejercicio04 {
-    public static void imprimir(int num1, int num2, int num3){
+    /**
+     * 
+     * @param num1
+     * @param num2
+     * @param num3 
+     */
+    public static void imprimir(int num1, int num2, int num3){ //DECLARO EL MÉTODO Y USO EL IF PARA DECLARAR EL NÚMERO MENOR
         if(num1<num2 && num1<num3){
             System.out.println("El número menor de los introducidos es el " +num1);
         }else if (num2<num1 && num2<num3){

@@ -11,6 +11,7 @@ import java.util.Scanner;
 public class Ejercicio03 {
 
     /**
+     * CON EL MÉTODO EN EL EJERICICO SE DECLARA CUAL ES EL NÚMERO MAYOR.
      * @param args the command line arguments
      */
     public static void main(String[] args) {

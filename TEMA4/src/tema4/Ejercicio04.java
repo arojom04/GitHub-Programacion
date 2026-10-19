@@ -11,6 +11,7 @@ import java.util.Scanner;
 public class Ejercicio04 {
 
     /**
+     * CON EL RESULTADO DEL MÉTODO DENTRO DEL METODO MAIN, SE ENSEÑA CUAL ES EL NÚMERO MENOR.
      * @param args the command line arguments
      */
     public static void main(String[] args) {

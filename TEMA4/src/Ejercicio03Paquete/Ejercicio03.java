@@ -7,7 +7,13 @@ package Ejercicio03Paquete;
  * @since 19/10/2026
  */
 public class Ejercicio03 {
-    public static void imprimir(int num1, int num2, int num3){
+    /**
+     * 
+     * @param num1
+     * @param num2
+     * @param num3 
+     */
+    public static void imprimir(int num1, int num2, int num3){ //DECLARO EL MÉTODO PARA EL EJERCICIO Y USO EL IF PARA DECLARA RL NÚMERO MAYOR
         if(num1>num2 && num1>num3){
             System.out.println("El número mayor de los introducidos es el " +num1);
         }else if (num2>num1 && num2>num3){

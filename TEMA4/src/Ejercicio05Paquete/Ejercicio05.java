@@ -7,8 +7,11 @@ package Ejercicio05Paquete;
  * @version 1
  */
 public class Ejercicio05 {
-    
-    public static void numero(int num){
+    /**
+     * 
+     * @param num 
+     */
+    public static void numero(int num){ //DECLARO EL MÉTODO Y CON EL IF CONSIGO VER SI ES PAR O IMPAR.
         if(num%2==0){
             System.out.println("El número introducido es par.");
         }else if(num%2!=0){
