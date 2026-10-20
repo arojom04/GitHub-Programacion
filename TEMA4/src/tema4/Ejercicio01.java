@@ -10,7 +10,7 @@ import java.util.Scanner;
  */
 public class Ejercicio01 {
 
-    public static void numero(int num){ //DECLARO EL MÉTODO Y CON ELLO CONSIGO VER QUÉ ES EL NÚMERO.
+    public static void numeroEntero(int num){ //DECLARO EL MÉTODO Y CON ELLO CONSIGO VER QUÉ ES EL NÚMERO.
         if(num<0){
             System.out.println("El número introducido es negativo");
         }else if(num>0){
@@ -28,7 +28,7 @@ public class Ejercicio01 {
         System.out.println("Por favor, introduzca un numero: ");
         int num = entrada.nextInt();
         
-        numero(num); //TRAIGO LA VARIABLE PARA QUE SE DIGA EL RESULTADO
+        numeroEntero(num); //TRAIGO LA VARIABLE PARA QUE SE DIGA EL RESULTADO
     }
     
 }
