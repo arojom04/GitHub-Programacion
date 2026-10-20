@@ -6,7 +6,7 @@ import java.util.Scanner;
  * @version 1
  * @since 29/09/2026
  */
-public class Ejercicio4 {
+public class Ejercicio04 {
 
     /**
      * @param args the command line arguments
