@@ -16,25 +16,38 @@ public class Ejercicio12 {
         return contrasenha;
     }
     
-    public static boolean comprobacion (boolean correcto, int contrasenha, int contrasenia, int contador){
-        correcto = false;
-        do{
-            if(contrasenha==contrasenia && contador<3){
-                correcto = true;
-                System.out.println("La contraseña es correcta. Has obtenido acceso.");
-            }else if (contrasenha!=contrasenia){
-                contador++;
-                System.out.println("La contraseña es incorrecta. Te quedan " +(3-contador));
-            }else if(contador>3){
-                System.out.println("Ya no te quedan intentos.");
-            }  
-        }while(correcto==false && contador<3); 
-        return correcto;
+    public static boolean comprobacion (int contrasenha, int contrasenia){
+        return contrasenha == contrasenia;
     }
     
-    public static void resultado(){
-        
-}
+
+    public static void resultado(int contrasenia, int contrasenha, boolean correcto, int contador) {
+        contador = 0;
+        correcto = false;
+
+        while (contador < 3 && !correcto) {
+            
+            System.out.println("Introduzca la contraseña: ");
+            contrasenha = contrasena(contrasenha);
+
+            correcto = comprobacion(contrasenha, contrasenia);
+
+            if (!correcto) {
+                contador++;
+
+                if (contador < 3) {
+                    System.out.println("Contraseña incorrecta. Te quedan " + (3 - contador) + " intentos.");
+                }
+            }
+        }
+
+        if (correcto) {
+            System.out.println("¡Enhorabuena! Has obtenido acceso.");
+        } else {
+            System.out.println("Error de acceso.");
+        }
+    }
+
             
             
     /**
@@ -42,10 +55,12 @@ public class Ejercicio12 {
      */
     public static void main(String[] args) {
         int contrasenha=0;
-        int contrasenia = 153;
+        int contrasenia = 1533;
         int contador = 0;
-        System.out.println("Introduzca la contraseña: ");
-        contrasenha = contrasena(contrasenha);
+        boolean correcto = false;
+        
+        resultado(contrasenia, contrasenha, correcto, contador);        
+        
     }
     
 }
