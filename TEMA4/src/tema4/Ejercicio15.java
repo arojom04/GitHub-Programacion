@@ -8,12 +8,19 @@ import java.util.Scanner;
  * @version 1
  */
 public class Ejercicio15 {
-
+    
+    /**
+     * 
+     * @return numero que escribe el usuario
+     */
     public static int pedirNumero() {
         Scanner entrada = new Scanner(System.in);        
         return entrada.nextInt();
     }
-
+    
+    /**
+     * 
+     */
     public static void menu() {
         System.out.println("\n- MENU -");
         System.out.println("1. Sumar los números.");
@@ -23,19 +30,42 @@ public class Ejercicio15 {
         System.out.println("5. Salir del programa.");
         System.out.print("Elija una opción: ");
     }
-
+    
+    /**
+     * 
+     * @param numero1
+     * @param numero2
+     * @return resultado de sumar ambos números
+     */
     public static int sumar(int numero1, int numero2) {
         return numero1 + numero2;
     }
 
+    /**
+     * 
+     * @param numero1
+     * @param numero2
+     * @return resultado de restar ambos números
+     */
     public static int restar(int numero1, int numero2) {
         return numero1 - numero2;
     }
 
+    /**
+     * 
+     * @param numero1
+     * @param numero2
+     * @return resultado de multiplicar ambos números
+     */
     public static int multiplicar(int numero1, int numero2) {
         return numero1 * numero2;
     }
-
+    
+    /**
+     * 
+     * @param numero1
+     * @param numero2 
+     */
     public static void dividir(int numero1, int numero2) {
         try {
             System.out.println("Resultado: " + (numero1 / numero2));
@@ -44,6 +74,12 @@ public class Ejercicio15 {
         }
     }
 
+    /**
+     * 
+     * @param opc
+     * @param numero1
+     * @param numero2 
+     */
     public static void ejecutarOpcion(int opc, int numero1, int numero2) {
         switch (opc) {
             case 1 ->
@@ -67,20 +103,18 @@ public class Ejercicio15 {
     }
 
     public static void main(String[] args) {
-
+      int opc;
 
         System.out.println("Introduzca el primer número:");
         int numero1 = pedirNumero();
 
         System.out.println("Introduzca el segundo número:");
         int numero2 = pedirNumero();
-
-        int opc;
-
+        
         do {
             menu();
             opc = pedirNumero();
-            ejecutarOpcion(opc, numero1, numero2);
+            ejecutarOpcion  (opc, numero1, numero2);
 
         } while (opc != 5);
 

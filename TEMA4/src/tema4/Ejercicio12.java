@@ -9,24 +9,41 @@ import java.util.Scanner;
  * @version 1
  */
 public class Ejercicio12 {
-    
-    public static int contrasena (int contrasenha){
-        Scanner entrada = new Scanner (System.in);
+
+    /**
+     *
+     * @param contrasenha
+     * @return contraseña que escribe el usuario
+     */
+    public static int contrasena(int contrasenha) {
+        Scanner entrada = new Scanner(System.in);
         contrasenha = entrada.nextInt();
         return contrasenha;
     }
-    
-    public static boolean comprobacion (int contrasenha, int contrasenia){
+
+    /**
+     *
+     * @param contrasenha
+     * @param contrasenia
+     * @return si el resultado es correcto o no
+     */
+    public static boolean comprobacion(int contrasenha, int contrasenia) {
         return contrasenha == contrasenia;
     }
-    
 
+    /**
+     *
+     * @param contrasenia
+     * @param contrasenha
+     * @param correcto
+     * @param contador
+     */
     public static void resultado(int contrasenia, int contrasenha, boolean correcto, int contador) {
         contador = 0;
         correcto = false;
 
         while (contador < 3 && !correcto) {
-            
+
             System.out.println("Introduzca la contraseña: ");
             contrasenha = contrasena(contrasenha);
 
@@ -48,19 +65,17 @@ public class Ejercicio12 {
         }
     }
 
-            
-            
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int contrasenha=0;
+        int contrasenha = 0;
         int contrasenia = 1533;
         int contador = 0;
         boolean correcto = false;
-        
-        resultado(contrasenia, contrasenha, correcto, contador);        
-        
+
+        resultado(contrasenia, contrasenha, correcto, contador);
+
     }
-    
+
 }

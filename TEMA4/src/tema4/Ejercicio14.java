@@ -10,17 +10,34 @@ import java.util.Scanner;
  */
 public class Ejercicio14 {
     
+    /**
+     * 
+     * @param numero
+     * @return numero que escribe el usuario.
+     */
     public static int pedirNumero (int numero){
         Scanner entrada = new Scanner (System.in);
         numero = entrada.nextInt();
         return numero;
     }
     
+    /**
+     * 
+     * @param numero
+     * @param numeroMinimo
+     * @return si el resultado es correcto o no
+     */
     public static boolean comprobacion (int numero, int numeroMinimo){
         return numero > numeroMinimo;
     }
     
-
+    /**
+     * 
+     * @param numeroMinimo
+     * @param numero
+     * @param correcto
+     * @param multiplicador 
+     */
     public static void resultado(int numeroMinimo, int numero, boolean correcto, int multiplicador) {
         correcto = false;
 

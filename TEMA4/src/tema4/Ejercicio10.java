@@ -10,12 +10,23 @@ import java.util.Scanner;
  */
 public class Ejercicio10 {
     
+    /**
+     * 
+     * @param num
+     * @return numero que escribe el usuario.
+     */
     public static int pedirNumero (int num){
         Scanner entrada = new Scanner (System.in);
         num = entrada.nextInt();
         return num;
     }
     
+    /**
+     * 
+     * @param multiplicador
+     * @param num
+     * @param resultado 
+     */
     public static void tablaMultiplicar(int multiplicador, int num, int resultado){
         do{
             multiplicador++;
